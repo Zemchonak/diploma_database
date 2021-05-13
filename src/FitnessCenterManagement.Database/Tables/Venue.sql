@@ -1,0 +1,7 @@
+﻿CREATE TABLE [dbo].[Venue]
+(
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY(1, 1),
+	[Name] NVARCHAR(MAX) NOT NULL,
+    [ImageName] NVARCHAR (128) NULL,
+	[Address] NVARCHAR(MAX) NOT NULL,
+)

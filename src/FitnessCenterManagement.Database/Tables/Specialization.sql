@@ -1,0 +1,5 @@
+﻿CREATE TABLE [dbo].[Specialization]
+(
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY(1, 1),
+	[Info] NVARCHAR(MAX) NOT NULL,
+)
