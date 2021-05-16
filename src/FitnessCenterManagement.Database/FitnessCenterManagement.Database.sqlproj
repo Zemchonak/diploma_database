@@ -100,7 +100,4 @@
   <ItemGroup>
     <PostDeploy Include="Post\Script.PostDeployment.sql" />
   </ItemGroup>
-  <ItemGroup>
-    <RefactorLog Include="FitnessCenterManagement.Database.refactorlog" />
-  </ItemGroup>
 </Project>

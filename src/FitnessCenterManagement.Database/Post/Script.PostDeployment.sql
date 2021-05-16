@@ -33,7 +33,7 @@ insert into dbo.[Specialization](Info)
 values('Test specialization')
 
 -- Client categories
-insert into dbo.[ClientCategory](Name, Sale)
+insert into dbo.[ClientCategory]([Name], SaleCoefficient)
 values(N'Пенсионер', 0.9),
 (N'Студент', 0.95)
 
