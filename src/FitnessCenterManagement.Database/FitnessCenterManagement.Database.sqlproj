@@ -79,6 +79,8 @@
     <Build Include="Tables\AbonementService.sql" />
     <Build Include="ForeignKeys\FK_User_Language.sql" />
     <Build Include="Tables\Language.sql" />
+    <Build Include="Tables\ClientCategory.sql" />
+    <Build Include="ForeignKeys\FK_User_ClientCategory.sql" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="ForeignKeys\FK_AbonementCard_User.sql" />
@@ -97,5 +99,8 @@
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Post\Script.PostDeployment.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="FitnessCenterManagement.Database.refactorlog" />
   </ItemGroup>
 </Project>

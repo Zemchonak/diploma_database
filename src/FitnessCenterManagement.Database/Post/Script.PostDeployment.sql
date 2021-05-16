@@ -32,6 +32,11 @@ values('88527CB8-A870-4757-AED9-DB0BC51624E2', '15269863-61E7-4877-BE2A-A22602CE
 insert into dbo.[Specialization](Info)
 values('Test specialization')
 
+-- Client categories
+insert into dbo.[ClientCategory](Name, Sale)
+values(N'Пенсионер', 0.9),
+(N'Студент', 0.95)
+
 -- Trainers
 insert into dbo.[Trainer](UserId, SpecializationId)
 values('88527CB8-A870-4757-AED9-DB0BC51624E2', 1)
