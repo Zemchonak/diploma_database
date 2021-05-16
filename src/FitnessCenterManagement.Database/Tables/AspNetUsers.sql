@@ -22,5 +22,6 @@
     [Balance] DECIMAL(18, 2) NOT NULL, 
     [AvatarName] NVARCHAR (132) NULL,
     [LanguageId] INT NOT NULL, 
+    [ClientCategoryId] int NULL,
     CONSTRAINT [PK_dbo.AspNetUsers] PRIMARY KEY CLUSTERED ([Id] ASC)
 );
