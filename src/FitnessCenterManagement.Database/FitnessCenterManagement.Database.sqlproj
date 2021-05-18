@@ -86,7 +86,6 @@
     <Build Include="ForeignKeys\FK_AbonementCard_User.sql" />
     <Build Include="ForeignKeys\FK_Trainer_User.sql" />
     <Build Include="ForeignKeys\FK_AbonementCard_Abonement.sql" />
-    <Build Include="ForeignKeys\FK_Abonement_Group.sql" />
     <Build Include="ForeignKeys\FK_AbonementService_Abonement.sql" />
     <Build Include="ForeignKeys\FK_Meeting_Group.sql" />
     <Build Include="ForeignKeys\FK_Meeting_Event.sql" />
