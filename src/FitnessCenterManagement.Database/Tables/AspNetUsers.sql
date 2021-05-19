@@ -20,7 +20,7 @@
     [LastName] NVARCHAR(256) NULL, 
     [Address] NVARCHAR(MAX) NULL, 
     [Balance] DECIMAL(18, 2) NOT NULL, 
-    [AvatarName] NVARCHAR (132) NULL,
+    [AvatarName] NVARCHAR (132) NOT NULL,
     [LanguageId] INT NOT NULL, 
     [ClientCategoryId] int NULL,
     CONSTRAINT [PK_dbo.AspNetUsers] PRIMARY KEY CLUSTERED ([Id] ASC)

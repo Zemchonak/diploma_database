@@ -2,6 +2,6 @@
 (
 	[Id] INT NOT NULL PRIMARY KEY IDENTITY(1, 1),
 	[Name] NVARCHAR(MAX) NOT NULL,
-    [ImageName] NVARCHAR (128) NULL,
+    [ImageName] NVARCHAR(132) NULL,
 	[Location] NVARCHAR(MAX) NOT NULL,
 )
