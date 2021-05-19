@@ -2,8 +2,6 @@
 (
 	[Id] INT NOT NULL PRIMARY KEY IDENTITY(1, 1),
 	[Name] NVARCHAR(MAX) NOT NULL,
-	[Days] INT NOT NULL,
-	[Cost] DECIMAL(18,2) NOT NULL,
+	[Coefficient] INT NOT NULL,
 	[Attendances] INT NOT NULL,
-    [ImageName] NVARCHAR (128) NULL,
 )
