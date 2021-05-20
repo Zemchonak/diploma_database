@@ -4,5 +4,6 @@
 	[Status] INT NOT NULL,
 	[DateTime] DATETIMEOFFSET NOT NULL,
 	[WeeklyEventId] INT NOT NULL,
-	[TrainerId] INT NOT NULL,
+	[TrainerId] INT NOT NULL, 
+    [Status] INT NOT NULL,
 )
