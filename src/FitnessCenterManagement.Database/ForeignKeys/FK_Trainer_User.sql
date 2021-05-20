@@ -1,3 +1,3 @@
 ﻿ALTER TABLE [dbo].[Trainer]
-ADD CONSTRAINT FK_Trainer_User FOREIGN KEY (UserId)     
-    REFERENCES [dbo].[AspNetUsers] (Id)
+ADD CONSTRAINT FK_Trainer_Customer FOREIGN KEY (CustomerId)
+    REFERENCES [dbo].[Customer] (Id)
