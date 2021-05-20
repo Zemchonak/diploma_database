@@ -9,8 +9,7 @@
     <ProjectGuid>{c0eb73f4-ac17-4105-aedb-dda80bb41391}</ProjectGuid>
     <DSP>Microsoft.Data.Tools.Schema.Sql.SqlAzureV12DatabaseSchemaProvider</DSP>
     <OutputType>Database</OutputType>
-    <RootPath>
-    </RootPath>
+    <RootPath />
     <RootNamespace>FitnessCenterManagement.Database</RootNamespace>
     <AssemblyName>FitnessCenterManagement.Database</AssemblyName>
     <ModelCollation>1033, CI</ModelCollation>
@@ -48,7 +47,6 @@
   </PropertyGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
-    <!-- Default to the v11.0 targets path if the targets file for the current VS version is not found -->
     <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
     <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
   </PropertyGroup>
@@ -70,33 +68,42 @@
     <Build Include="Tables\AbonementCard.sql" />
     <Build Include="Tables\Trainer.sql" />
     <Build Include="Tables\Abonement.sql" />
-    <Build Include="Tables\Group.sql" />
     <Build Include="Tables\Specialization.sql" />
-    <Build Include="Tables\Meeting.sql" />
-    <Build Include="Tables\Event.sql" />
+    <Build Include="Tables\FitnessEvent.sql" />
     <Build Include="Tables\Venue.sql" />
     <Build Include="Tables\Service.sql" />
-    <Build Include="Tables\AbonementService.sql" />
     <Build Include="ForeignKeys\FK_User_Language.sql" />
     <Build Include="Tables\Language.sql" />
-    <Build Include="Tables\ClientCategory.sql" />
-    <Build Include="ForeignKeys\FK_User_ClientCategory.sql" />
+    <Build Include="Tables\Customer.sql" />
+    <Build Include="Tables\Review.sql" />
+    <Build Include="Tables\AbonementFitnessEvent.sql" />
+    <Build Include="Tables\WeeklyEvent.sql" />
+    <Build Include="Tables\CardEventItem.sql" />
+    <Build Include="Tables\DateEvent.sql" />
+    <Build Include="ForeignKeys\FK_Review_User.sql" />
+    <Build Include="Tables\CustomerCategory.sql" />
+    <Build Include="ForeignKeys\FK_AbonementCard_Customer.sql" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="ForeignKeys\FK_AbonementCard_User.sql" />
     <Build Include="ForeignKeys\FK_Trainer_User.sql" />
     <Build Include="ForeignKeys\FK_AbonementCard_Abonement.sql" />
-    <Build Include="ForeignKeys\FK_AbonementService_Abonement.sql" />
-    <Build Include="ForeignKeys\FK_Meeting_Group.sql" />
-    <Build Include="ForeignKeys\FK_Meeting_Event.sql" />
-    <Build Include="ForeignKeys\FK_Event_Trainer.sql" />
     <Build Include="ForeignKeys\FK_Trainer_Specialization.sql" />
-    <Build Include="ForeignKeys\FK_Event_Venue.sql" />
     <Build Include="ForeignKeys\FK_Service_Specialization.sql" />
-    <Build Include="ForeignKeys\FK_AbonementService_Service.sql" />
-    <Build Include="ForeignKeys\FK_Event_Service.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Post\Script.PostDeployment.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ForeignKeys\FK_Customer_User.sql" />
+    <None Include="ForeignKeys\FK_Customer_CustomerCategory.sql" />
+    <None Include="ForeignKeys\FK_CardEventItem_AbonementCard.sql" />
+    <None Include="ForeignKeys\FK_CardEventItem_DateEvent.sql" />
+    <None Include="ForeignKeys\FK_DateEvent_WeeklyEvent.sql" />
+    <None Include="ForeignKeys\FK_DateEvent_Trainer.sql" />
+    <None Include="ForeignKeys\FK_WeeklyEvent_FitnessEvent.sql" />
+    <None Include="ForeignKeys\FK_AbonementFitnessEvent_FitnessEvent.sql" />
+    <None Include="ForeignKeys\FK_AbonementFitnessEvent_Abonement.sql" />
+    <None Include="ForeignKeys\FK_FitnessEvent_Venue.sql" />
+    <None Include="ForeignKeys\FK_FitnessEvent_Service.sql" />
   </ItemGroup>
 </Project>
