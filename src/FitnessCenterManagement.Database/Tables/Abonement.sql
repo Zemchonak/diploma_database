@@ -4,5 +4,6 @@
 	[Name] NVARCHAR(MAX) NOT NULL,
 	[Coefficient] DECIMAL(18,2) NOT NULL,
 	[Attendances] INT NOT NULL,
-    [ImageName] NVARCHAR (132) NOT NULL,
+    [ImageName] NVARCHAR (132) NOT NULL, 
+    [Status] INT NOT NULL,
 )
