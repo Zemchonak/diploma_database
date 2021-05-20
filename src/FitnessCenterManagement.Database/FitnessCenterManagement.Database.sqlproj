@@ -83,6 +83,7 @@
     <Build Include="ForeignKeys\FK_Review_User.sql" />
     <Build Include="Tables\CustomerCategory.sql" />
     <Build Include="ForeignKeys\FK_AbonementCard_Customer.sql" />
+    <Build Include="Tables\Message.sql" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="ForeignKeys\FK_Trainer_User.sql" />
@@ -105,5 +106,6 @@
     <None Include="ForeignKeys\FK_AbonementFitnessEvent_Abonement.sql" />
     <None Include="ForeignKeys\FK_FitnessEvent_Venue.sql" />
     <None Include="ForeignKeys\FK_FitnessEvent_Service.sql" />
+    <None Include="ForeignKeys\FK_Message.sql" />
   </ItemGroup>
 </Project>
