@@ -1,4 +1,4 @@
-﻿CREATE TABLE [dbo].[ClientCategory]
+﻿CREATE TABLE [dbo].[CustomerCategory]
 (
 	[Id] INT NOT NULL PRIMARY KEY IDENTITY(1,1),
 	[Name] NVARCHAR(MAX) NOT NULL,
