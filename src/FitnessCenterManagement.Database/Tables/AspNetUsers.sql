@@ -22,5 +22,6 @@
     [Balance] DECIMAL(18, 2) NOT NULL, 
     [AvatarName] NVARCHAR (132) NOT NULL,
     [LanguageId] INT NOT NULL, 
+    [QrCodeId] NVARCHAR (128) NOT NULL,
     CONSTRAINT [PK_dbo.AspNetUsers] PRIMARY KEY CLUSTERED ([Id] ASC)
 );
