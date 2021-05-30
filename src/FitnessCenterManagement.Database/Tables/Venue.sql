@@ -4,4 +4,5 @@
 	[Name] NVARCHAR(MAX) NOT NULL,
     [ImageName] NVARCHAR(132) NOT NULL,
 	[Location] NVARCHAR(MAX) NOT NULL,
+	[QrCodeId] NVARCHAR(128) NOT NULL,
 )
